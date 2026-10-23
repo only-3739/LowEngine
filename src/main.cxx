@@ -1,5 +1,11 @@
-#include <iostream>
+#include <Core/LifeCycle.h>
 
-int main(int args, char* argv[]) {
+int main() {
 
+    Begin();
+    Start();
+    while(Loop());
+    Quit();
+    End();
+    
 }

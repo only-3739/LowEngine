@@ -1,0 +1,8 @@
+CompileFlags:
+  CompilationDatabase: build
+---
+If:
+  PathMatch: (include|src)/.*
+CompileFlags:
+  # Header commands may be inferred from vk-bootstrap, which lacks this path.
+  Add: [-I/home/arch/Projects/LowEngine/include]
